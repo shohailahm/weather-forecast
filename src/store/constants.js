@@ -1,0 +1,2 @@
+export const IMPRESULTS="IMPRESULTS";
+export const METRICRESULTS="METRICRESULTS";
