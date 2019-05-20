@@ -1,24 +1,37 @@
 This project was bootstrapped with [Create React App]
 
-Libraries Used:
-Charting Library [React-vis](https://uber.github.io/react-vis/) 
+## Weather Forecast
 
-Design [Material-Ui](https://material-ui.com/)
+What is this repository for?
 
-State Management[Redux]
+    Weather Forecast for Munich for 10 days
+    Git clone :- https://github.com/shohailahm/weather-forecast
 
-Test[Jest & Enzyme]
+How do I get set up?
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    Set up all dependencies mentioned below
+    Summary of set up:- Clone the file from repository and follow the "deployment instructions".
 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dependencies
+
+    All dependencies are listed in package.json file
+    * Install Npm or yarn package manager (Uduntu 16.04, Link:- https://yarnpkg.com/en/docs/install#debian-stable)
+    * In terminal go to your project directory
+    * In terminal type "npm install" or "yarn" to add all dependencies.
+
+Deployment instructions:-
+
+    In terminal go to your project directory
+    * Type "npm start"
+    * Or Type "yarn start"
+    * Open two tab on the browser and type this (http://localhost:3000)
+    
+
+Who do I talk to?
+
+    Shohail Ahmed
+    contact info:- suhailh36@outlook.com
+    LinkedIn:- https://www.linkedin.com/in/shohail/
 
