@@ -5,14 +5,14 @@ export default class ArrBtn extends React.Component{
    render(){
        return(
         <Grid container>
-        <Grid item xs={4}>
-          {this.props.showLeft?<div onClick={this.props.prev}><NavigateBefore /></div>:null}
+        <Grid item xs={4} className="Left">
+          {this.props.showLeft?<div  onClick={this.props.prev}><NavigateBefore /></div>:null}
         </Grid>
         <Grid item xs={4}>
           
         </Grid>
         <Grid item xs={4}>
-          {this.props.showRight?<div onClick={this.props.next}><NavigateNext onClick={()=>this.props.next()}/></div>:null} 
+          {this.props.showRight?<div className="Right" onClick={this.props.next}><NavigateNext onClick={()=>this.props.next()}/></div>:null} 
           </Grid>
         </Grid>
        )
