@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App]
 
 Libraries Used:
 Charting Library [React-vis](https://uber.github.io/react-vis/) 
+
 Design [Material-Ui](https://material-ui.com/)
 
 State Management[Redux]
