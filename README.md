@@ -26,7 +26,7 @@ Deployment instructions:-
     In terminal go to your project directory
     * Type "npm start"
     * Or Type "yarn start"
-    * Open two tab on the browser and type this (http://localhost:3000)
+    * Open tab on the browser and type this (http://localhost:3000)
     
 
 Who do I talk to?
