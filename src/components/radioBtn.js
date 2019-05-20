@@ -24,14 +24,11 @@ const styles = theme => ({
              value:"imperial"
          }   
     }
-    componentDidMount(){
-      console.log(this.state.value);
-    }
+ 
     handleChange = event => {
       if(event.target.value!==this.state.value){
         this.setState({ value: event.target.value },()=>{
           this.props.radioChanged(this.state.value)
-          console.log(this.state.value);
         });
       }
      

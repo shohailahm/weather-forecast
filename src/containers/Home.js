@@ -23,12 +23,13 @@ import MyBarChart from '../components/Chart';
      }
     }
 
+    //getting Data from Api and stroring in Redux
     componentDidMount(){
        this.props.dispatch(userActions.getTemp(this.state.units));   
     }
       
-
-    showCards=(first,last)=>{
+//inital seting up of cards
+    showCards=()=>{
         if(this.state.units==="metric"){
             if(!this.props.metrics)return;
              let celArr=this.getArr(this.props.metrics);
@@ -41,6 +42,7 @@ import MyBarChart from '../components/Chart';
      }
     }
 
+    //onfrontArrowClick
     onNext=()=>{
         this.setState({index:this.state.index+3,prevInd:this.state.index},()=>{
             if(this.state.index>=this.state.imperials.length){
@@ -52,6 +54,7 @@ import MyBarChart from '../components/Chart';
         });
     }
 
+    //onbackArrowClick
     onPrev=()=>{
         this.setState({index:this.state.prevInd,prevInd:this.state.prevInd-3},()=>{
             if(this.state.index<=2){
@@ -65,7 +68,7 @@ import MyBarChart from '../components/Chart';
     }
 
 
-
+    //radioButton Changed
     tempChanged=(item)=>{
         this.setState({units:item,cardLoading:true,index:0},()=>{
             if(!this.props.metrics||!this.props.imperials){
@@ -91,6 +94,7 @@ import MyBarChart from '../components/Chart';
      }
     }
 
+     //removing excess items from the array
     getArr=(arr)=>{
         let newArr=arr.map((i,ind)=>{
             let neDay=new Date();
@@ -102,14 +106,15 @@ import MyBarChart from '../components/Chart';
      })
      return newArr;
     }
+
+    //converting obj to {x:1,y:1} for graph
     getGraphData=(arr)=>{
-        debugger
         let newArr=arr.map((i,ind)=>{
             let neDay=new Date();
             let day=neDay.getUTCDate()+ind;
             return {x:day,y:i.temp.max}    
      })
-     //console.log(newArr);
+
      return newArr;
     }
 
